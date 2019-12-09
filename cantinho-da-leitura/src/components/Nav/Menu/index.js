@@ -35,8 +35,8 @@ class Menu extends React.Component {
                 <ul className={classeDasOpcoes}>
                 <li><Link to='/' className="navbar-links__ativo">Home</Link></li>
                 <li><Link to='/por-que-ler' className="navbar-links__ativo">Por que ler?</Link></li>
-                <li><Link to='/melhores-da-semana' className="navbar-links__ativo">Melhores da semana</Link></li>
-                <li><Link to='/busca-autores' className="navbar-links__ativo">Busca por autores</Link></li>
+                <li><Link to='/melhores-da-semana' className="navbar-links__ativo">Os melhores</Link></li>
+                <li><Link to='/busca-autores' className="navbar-links__ativo">Autores</Link></li>
                 <li><Link to='/dica-especial' className="navbar-links__ativo">Dica especial</Link></li>
                 </ul>
             </div>

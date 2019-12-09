@@ -1,6 +1,6 @@
 import React from 'react';
 import Menu from './Menu';
-import Logo from '../../assets/img/logo1.png';
+import Logo from '../../assets/img/logo.png';
 import './styles.css';
 
 const Nav = () => {

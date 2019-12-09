@@ -10,7 +10,7 @@ import Dica from './pages/Dica';
 function App() {
   return (
     <div>
-      <Nav/>
+      <Nav />
       <Switch>
         <Route exact path='/' component={Home} />
         <Route path='/por-que-ler' component={Porque}/>
