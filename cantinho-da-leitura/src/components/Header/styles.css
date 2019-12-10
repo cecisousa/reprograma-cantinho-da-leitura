@@ -16,7 +16,7 @@
 
 .porque-header {
   background-image: url("../../assets/img/page02-porque.jpeg");
-  height: 30vh;
+  height: 40vh;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -32,7 +32,7 @@
 
 .melhores-header {
   background-image: url("../../assets/img/page03-melhores.jpeg");
-  height: 30vh;
+  height: 40vh;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -48,7 +48,7 @@
 
 .autores-header {
   background-image: url("../../assets/img/page04-autores.jpeg");
-  height: 30vh;
+  height: 40vh;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -64,7 +64,7 @@
 
 .dicas-header {
   background-image: url("../../assets/img/page05-dicas.jpeg");
-  height: 30vh;
+  height: 40vh;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -82,5 +82,6 @@ h1 {
   font-size: 64px;
   color: #ffffff;
   padding: 16px;
+  margin-top: 150px;
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.75);
 }
