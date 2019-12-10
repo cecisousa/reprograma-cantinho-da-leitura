@@ -1,0 +1,15 @@
+.divContentDica {
+    display: flex;
+    background-color: #fce3b6;
+    margin: 50px auto;
+    border-radius: 20px;
+    width: 60%;    
+}
+
+.imagemLivroDica {
+    width: 250px;
+    height: 350px;
+    margin: 30px;
+    border-radius: 10px;
+}
+
