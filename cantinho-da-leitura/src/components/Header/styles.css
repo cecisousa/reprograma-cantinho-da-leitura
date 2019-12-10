@@ -79,7 +79,8 @@
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 64px;
   color: #ffffff;
   padding: 16px;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.75);
 }

@@ -6,11 +6,14 @@ import './styles.css';
 const Nav = () => {
     return (
         <nav className="navbar">
-            <img
-                src={Logo}
-                alt="Logotipo do site Cantinho da Leitura"
-                className="navbar-logo"
-            />
+            <nav className="logo">
+                <img
+                    src={Logo}
+                    alt="Logotipo do site Cantinho da Leitura"
+                    className="navbar-logo"
+                />
+                <h2 className="texto-logo">Cantinho da Leitura</h2>
+            </nav>
             <Menu />
         </nav>
     )

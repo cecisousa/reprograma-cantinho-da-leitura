@@ -25,10 +25,10 @@
   top: 0;
   left: 0;
   height: 100%;
-  width: 60%;
+  width: 40%;
   padding: 32px 16px 0;
   margin: 0;
-  background: #3C1053;
+  background: #560027;
   transform: translateX(-100%);
   transition: transform 1s ease-in-out;
 }
@@ -45,7 +45,7 @@
   margin-top: 16px;
 }
 
-@media (min-width: 880px) {
+@media (min-width: 1024px) {
   .navbar-menu__botao {
     display: none;
   }
@@ -64,10 +64,6 @@
 
   .navbar-menu__opcoes--aberto {
     transform: initial;
-  }
-
-  .navbar-menu__opcoes--ativo {
-    border-bottom: 2px solid #F5A91E;
   }
 
   .navbar-menu__opcoes li + li {
