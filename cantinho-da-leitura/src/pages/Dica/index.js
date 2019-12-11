@@ -12,8 +12,8 @@ class Dica extends React.Component {
         this.state = {
             livros: [],
             imagem: Random,
-            titulo: "",
-            autor: ""
+            titulo: "Descubra o nome do seu próximo livro...",
+            autor: "... e do próximo autor ou autora!"
         }
     }
 
@@ -49,12 +49,13 @@ class Dica extends React.Component {
                 <div className="container">
                     <div className="divDica">
                         <p className="textoIntro">Está querendo ler um livro, mas não sabe qual escolher? Clique no botão abaixo para receber uma dica especial do <span className="nomeSite">Cantinho da Leitura</span>!</p>
+
                     </div>
                     <div className="divBotao">
                         <Button funcao={this.numeroAleatorio}>
                             Quero uma indicação!
                         </Button>
-                    </div>
+                        </div>
                     <Livro
                         titulo={this.state.titulo}
                         autor={this.state.autor}

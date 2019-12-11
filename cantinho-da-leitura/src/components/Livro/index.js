@@ -3,11 +3,11 @@ import './styles.css'
 
 function Livro(props) {
   return (
-    <div className='divContentDica'>
+    <div className="divContentDica">
       <img className="imagemLivroDica" src={props.imagem} alt="Crédito da imagem: site da Amazon" />
-      <div>
+      <div className="divContentText">
         <h3 className="tituloDica">{props.titulo}</h3>
-        <p>{props.autor}</p>
+        <p className="autorDica">{props.autor}</p>
       </div>
     </div>
   )
