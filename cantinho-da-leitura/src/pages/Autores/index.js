@@ -36,11 +36,11 @@ class Autores extends React.Component {
         return (
             <Fragment>
                 <Header
-                    titulo="Pesquise pelo seu autor favorito"
+                    titulo="Busque seus autores favoritos"
                     classe="autores-header"
                 />
                 <Input
-                    placeholder="Pesquise por um autor"
+                    placeholder="Pesquise por um autor ou autora"
                     tipo="text"
                     getInputValue={this.inputValue}
                 />

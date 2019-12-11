@@ -33,7 +33,7 @@
 .melhores-header {
   background-image: url("../../assets/img/page03-melhores.jpeg");
   height: 40vh;
-  background-position: center;
+  background-position: top;
   background-size: cover;
   background-attachment: fixed;
   background-color: rgba(0, 0, 0, 0.6);
@@ -49,7 +49,7 @@
 .autores-header {
   background-image: url("../../assets/img/page04-autores.jpeg");
   height: 40vh;
-  background-position: center;
+  background-position: 0 20%;
   background-size: cover;
   background-attachment: fixed;
   background-color: rgba(0, 0, 0, 0.6);

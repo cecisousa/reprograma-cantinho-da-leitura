@@ -7,7 +7,7 @@ const config = {
 
 const protocolo = axios.create(config)
 
-export function getLivros () {
+export function getMelhores () {
   const url = 'lists/overview.json?api-key=3sbcchrmAuDWG3vXagfPGU5gV3CGDAwJ'
   return protocolo.get(url)
 }
