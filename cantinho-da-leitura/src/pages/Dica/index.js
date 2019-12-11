@@ -1,8 +1,8 @@
 import React from 'react';
 import Header from '../../components/Header';
-import Random from '../../assets/img/random.jpg';
+import Random from '../../assets/img/random.png';
 import Button from '../../components/Button';
-import Livro from '../../components/Livro';
+import LivroDica from './components/LivroDica';
 import { getDicas } from '../../service/dicas';
 import './styles.css';
 
@@ -56,7 +56,7 @@ class Dica extends React.Component {
                             Quero uma indicação!
                         </Button>
                         </div>
-                    <Livro
+                    <LivroDica
                         titulo={this.state.titulo}
                         autor={this.state.autor}
                         imagem={this.state.imagem}

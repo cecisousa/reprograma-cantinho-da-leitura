@@ -1,5 +1,10 @@
 import axios from 'axios'
 
+const config = {
+  baseURL: 'https://api.nytimes.com/svc/books/v3/',
+  timeout: 1000
+}
+
 const protocolo = axios.create(config)
 
 export function getLivros () {

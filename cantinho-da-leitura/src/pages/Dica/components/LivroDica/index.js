@@ -1,7 +1,7 @@
 import React from 'react'
 import './styles.css'
 
-function Livro(props) {
+function LivroDica(props) {
   return (
     <div className="divContentDica">
       <img className="imagemLivroDica" src={props.imagem} alt="Crédito da imagem: site da Amazon" />
@@ -13,4 +13,4 @@ function Livro(props) {
   )
 }
 
-export default Livro;
+export default LivroDica;
