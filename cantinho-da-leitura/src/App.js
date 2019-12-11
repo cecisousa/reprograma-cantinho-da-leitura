@@ -6,6 +6,7 @@ import Porque from './pages/Porque';
 import Melhores from './pages/Melhores';
 import Autores from './pages/Autores';
 import Dica from './pages/Dica';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path='/busca-autores' component={Autores}/>
         <Route path='/dica-especial' component={Dica}/>
       </Switch>
+      <Footer/>
     </div>
   );
 }

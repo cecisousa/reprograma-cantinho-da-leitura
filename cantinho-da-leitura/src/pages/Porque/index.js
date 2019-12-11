@@ -18,7 +18,6 @@ const Porque = () => {
                 <Quote />
                 <Lista />
                 <Dados />
-                <hr/>
             </div>
         </section>
     )

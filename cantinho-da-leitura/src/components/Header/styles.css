@@ -1,6 +1,6 @@
 .home-header {
   background-image: url("../../assets/img/page01-home.jpeg");
-  height: 100vh;
+  min-height: 96vh;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
