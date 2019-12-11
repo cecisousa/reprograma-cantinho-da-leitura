@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles.css';
 
 const LivroAutores = (props) => {
     let dataAtual = props.publication_dt.split("-")

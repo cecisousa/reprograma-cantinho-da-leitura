@@ -1,14 +1,16 @@
 import React, { Fragment } from 'react';
 import Header from '../../components/Header';
 import LivroMelhores from './components/LivroMelhores';
+import Intro from '../../components/Intro'
 import { getMelhores } from '../../service/nytimes';
-
+import NYT from '../../assets/img/nyt.jpg';
+import './styles.css'
 
 class Melhores extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            posts: []
+            livros: []
         }
     }
 
@@ -16,7 +18,7 @@ class Melhores extends React.Component {
         getMelhores()
             .then(response => {
                 this.setState({
-                    posts: response.data.results.lists.map(item => {
+                    livros: response.data.results.lists.map(item => {
                         return item.books
                     })
                 })
@@ -35,15 +37,25 @@ class Melhores extends React.Component {
                     titulo="Os melhores livros da semana"
                     classe="melhores-header"
                 />
-                <section>
+                <section className="container melhores">
+                    <Intro
+                        imagem={NYT}
+                        alt="Capa do jornal impresso The New York Times"
+                        paragrafo1={["O jornal ", <span className='nomeSite'>The New York Times</span>, " é uma publicação norte-americana que circula diariamente desde 1851. Considerada uma referência no mundo do jornalismo, a publicação traz semanalmente uma lista dos livros que mais foram vendidos nos Estados Unidos."]}
+                        paragrafo2='Esses "best-sellers" são originalmente agrupados em diversas categorias e, aqui, você tem acesso à lista completa: confira quais foram os 55 livros mais populares na última semana!'
+                    />
                     <div>
-                        {this.state.posts.length > 0
-                            ? this.state.posts.map(item => {
+                        {this.state.livros.length > 0
+                            ? this.state.livros.map(item => {
                                 return item.flatMap(livro => {
-                                    return <LivroMelhores key={livro.primary_isbn13} {...livro} />
+                                    return <div>
+                                        <LivroMelhores key={livro.primary_isbn13} {...livro} />
+                                    </div>
                                 })
                             })
-                            : <span>Carregando a lista de livros! ;)</span>
+                            : <div className="divLoading">
+                                <span className="loading">Carregando a lista de livros...</span>
+                            </div>
                         }
                     </div>
                 </section>

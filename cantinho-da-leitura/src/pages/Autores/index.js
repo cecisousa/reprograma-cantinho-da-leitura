@@ -15,7 +15,6 @@ class Autores extends React.Component {
         }
     }
 
-
     inputValue = (param) => {
         this.setState({
             value: param.target.value
