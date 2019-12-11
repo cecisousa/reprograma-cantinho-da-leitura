@@ -7,7 +7,7 @@ import Header from '../../components/Header'
 import './styles.css';
 
 class Autores extends React.Component {
-    constructor(props){
+    constructor(props) {
         super(props)
         this.state = {
             value: "",
@@ -21,7 +21,7 @@ class Autores extends React.Component {
         })
     }
 
-    handleSearch = () => {      
+    handleSearch = () => {
         getAutores(this.state.value).then((response) => {
             this.setState({
                 autores: response.data.results
@@ -31,25 +31,34 @@ class Autores extends React.Component {
         }).catch(err => console.log(err))
     }
 
-    render(){
+    render() {
         return (
             <Fragment>
                 <Header
                     titulo="Busque seus autores favoritos"
                     classe="autores-header"
                 />
-                <Input
-                    placeholder="Pesquise por um autor ou autora"
-                    tipo="text"
-                    getInputValue={this.inputValue}
-                />
-                <Button funcao={this.handleSearch}>
-                    Pesquisar
-                </Button>
-                <div>
-                    {this.state.autores.map((item, index) => {
-                        return <LivroAutores key={index} {...item}/>
-                    })}
+                <div className="container autores">
+                    <div className="divAutores">
+                        <p className="textoIntro">Aqui você pode pesquisar por um autor ou autora e ler as resenhas publicadas pelo jornal <span className="nomeSite">The New York Times</span> a respeito dos seus livros.</p>
+                    </div>
+                    <div className="divSearch">
+                        <Input
+                            placeholder="Pesquise por um autor ou autora"
+                            tipo="text"
+                            getInputValue={this.inputValue}
+                        />
+                        <div className="divBtn">
+                            <Button funcao={this.handleSearch}>
+                                Pesquisar
+                            </Button>
+                        </div>
+                    </div>
+                    <div>
+                        {this.state.autores.map((item, index) => {
+                            return <LivroAutores key={index} {...item} />
+                        })}
+                    </div>
                 </div>
             </Fragment>
         )

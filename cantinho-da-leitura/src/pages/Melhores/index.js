@@ -41,15 +41,15 @@ class Melhores extends React.Component {
                     <Intro
                         imagem={NYT}
                         alt="Capa do jornal impresso The New York Times"
-                        paragrafo1={["O jornal ", <span className='nomeSite'>The New York Times</span>, " é uma publicação norte-americana que circula diariamente desde 1851. Considerada uma referência no mundo do jornalismo, a publicação traz semanalmente uma lista dos livros que mais foram vendidos nos Estados Unidos."]}
+                        paragrafo1={["O jornal ", <span key="indicadorMelhores" className='nomeSite'>The New York Times</span>, " é uma publicação norte-americana que circula diariamente desde 1851. Considerada uma referência no mundo do jornalismo, a publicação traz semanalmente uma lista dos livros que mais foram vendidos nos Estados Unidos."]}
                         paragrafo2='Esses "best-sellers" são originalmente agrupados em diversas categorias e, aqui, você tem acesso à lista completa: confira quais foram os 55 livros mais populares na última semana!'
                     />
                     <div>
                         {this.state.livros.length > 0
                             ? this.state.livros.map(item => {
                                 return item.flatMap(livro => {
-                                    return <div>
-                                        <LivroMelhores key={livro.primary_isbn13} {...livro} />
+                                    return <div key={livro.primary_isbn13}>
+                                        <LivroMelhores {...livro} />
                                     </div>
                                 })
                             })
