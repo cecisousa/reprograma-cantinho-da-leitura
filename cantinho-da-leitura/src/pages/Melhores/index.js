@@ -22,7 +22,6 @@ class Melhores extends React.Component {
                         return item.books
                     })
                 })
-
             })
 
             .catch(error => {

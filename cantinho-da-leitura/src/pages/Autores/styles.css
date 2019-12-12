@@ -3,7 +3,7 @@
 }
 
 .divAutores {
-    width: 60%;
+    width: 70%;
     margin: 50px auto;
 }
 
@@ -20,4 +20,26 @@ form {
 .divBtn {
     display: flex;
     align-self: center;
+}
+
+@media (max-width: 1300px){
+    .divAutores {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1200px){
+    .divAutores {
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px){
+    form {
+        display: block;
+    }
+
+    .divBtn {
+        justify-content: center;
+    }
 }

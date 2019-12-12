@@ -4,7 +4,7 @@
     background-color: #fce3b6;
     margin: 50px auto;
     border-radius: 20px;
-    width: 40%;
+    width: 480px;
 }
 
 .autoresTitulo {
@@ -36,4 +36,22 @@
     color: #ffffff;
     text-decoration: none;
     border-radius: 10px;
+}
+
+@media (max-width: 600px){
+    .autoresText {
+        width: 380px;
+    }
+}
+
+@media (max-width: 425px){
+    .autoresText {
+        width: 300px;
+    }
+}
+
+@media (max-width: 350px){
+    .autoresText {
+        width: 280px;
+    }
 }
