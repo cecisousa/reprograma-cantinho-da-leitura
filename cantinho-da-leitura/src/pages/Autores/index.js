@@ -15,9 +15,16 @@ class Autores extends React.Component {
         }
     }
 
-    inputValue = (param) => {
+    handleChange = (param) => {
         this.setState({
             value: param.target.value
+        })
+    }
+
+    handleSubmit = (event) => {
+        event.preventDefault();
+        this.setState({
+            value: ""
         })
     }
 
@@ -41,16 +48,19 @@ class Autores extends React.Component {
                         <p className="textoIntro">Aqui você pode pesquisar por um autor ou autora e ler as resenhas publicadas pelo jornal <span className="nomeSite">The New York Times</span> a respeito dos seus livros.</p>
                     </div>
                     <div className="divSearch">
-                        <Input
-                            placeholder="Pesquise o nome de um autor ou autora"
-                            tipo="text"
-                            getInputValue={this.inputValue}
-                        />
-                        <div className="divBtn">
-                            <Button funcao={this.handleSearch}>
-                                Pesquisar
+                        <form onSubmit={this.handleSubmit}>
+                            <Input
+                                placeholder="Pesquise o nome de um autor ou autora"
+                                tipo="text"
+                                getInputValue={this.handleChange}
+                                value={this.state.value}
+                            />
+                            <div className="divBtn">
+                                <Button funcao={this.handleSearch}>
+                                    Pesquisar
                             </Button>
-                        </div>
+                            </div>
+                        </form>
                     </div>
                     <div>
                         {this.state.autores.map((item, index) => {
