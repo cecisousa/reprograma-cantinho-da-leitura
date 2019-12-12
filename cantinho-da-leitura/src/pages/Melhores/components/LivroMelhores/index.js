@@ -10,7 +10,9 @@ const LivroMelhores = (props) => {
 
     return (
         <div className="melhoresContent">
-            <img className="melhoresImagem" src={props.book_image} alt="Lista de livros do NYTimes" />
+            <div className="divMelhoresImagem">
+                <img className="melhoresImagem" src={props.book_image} alt="Lista de livros do NYTimes" />
+            </div>
             <div className="melhoresTexto">
                 <h3 className="melhoresTitulo">{props.title}</h3>
                 <p className="melhoresAutor">{props.author}</p>

@@ -4,6 +4,12 @@
     margin: 30px auto;
     border-radius: 20px;
     width: 85%;
+    padding: 20px 0;
+}
+
+.divMelhoresImagem {
+    display: flex;
+    align-items: center;
 }
 
 .melhoresImagem {
@@ -35,5 +41,49 @@
 .melhoresDescricao {
     font-size: 20px;
     color: #560027; 
-    width: 720px;  
+    width: 90%;  
+}
+
+@media (max-width: 1200px){
+    .melhoresContent {
+        width: 90%;
+    }
+}
+
+@media (max-width: 900px){
+    .melhoresTitulo {
+        width: 300px;
+    }
+}
+
+@media (max-width: 700px){
+    .melhoresContent {
+        display: block;
+    }
+
+    .divMelhoresImagem {
+        justify-content: center;
+    }
+
+    .melhoresTitulo, .melhoresAutor, .melhoresDescricao {
+        margin: 10px auto;
+        text-align: center;
+    }
+}
+
+@media (max-width: 450px){
+    .melhoresTitulo {
+        width: 250px;
+        font-size: 20px;
+    }
+
+    .melhoresAutor, .melhoresDescricao {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 350px){
+    .melhoresTitulo {
+        width: 220px;
+    }
 }
