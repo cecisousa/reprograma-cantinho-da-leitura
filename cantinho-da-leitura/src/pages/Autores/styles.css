@@ -8,9 +8,13 @@
 }
 
 .divSearch {
-    display: flex;
-    justify-content: center;
     margin: 50px auto;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .divBtn {
