@@ -54,5 +54,29 @@
         margin: 15px auto;
         text-align: center;
     }
+}
 
+@media (max-width: 600px){    
+    .divContentDica {
+        width: 350px;
+    }
+}
+
+
+@media (max-width: 450px){
+    .divContentDica {
+        width: 300px;
+    }
+
+    .imagemLivroDica {
+        width: 200px;
+        height: 300px;
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 350px){
+    .divContentDica {
+        width: 280px;
+    }
 }
