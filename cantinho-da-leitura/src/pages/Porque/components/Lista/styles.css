@@ -6,7 +6,6 @@ ul {
 
 .secaoLista {
     display: flex;
-    flex-flow: row-reverse;
 }
 
 .item {
@@ -39,4 +38,25 @@ ul {
     height: 480px;
     margin: 30px;
     border-radius: 10px;
+}
+
+@media (max-width: 1150px){
+    .secaoLista {
+        display: block;
+    }
+}
+
+@media (max-width: 400px) {
+    .imagem {
+        height: 400px;
+    }
+
+    .titulo {
+        width: 250px;
+        font-size: 22px;
+    }
+
+    .item {
+        margin: 25px;
+    }
 }

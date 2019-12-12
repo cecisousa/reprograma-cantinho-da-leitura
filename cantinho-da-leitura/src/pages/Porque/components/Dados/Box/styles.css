@@ -2,18 +2,23 @@
     display: flex;
     background-color: #fce3b6;
     margin: 30px auto;
+    padding: 20px;
     border-radius: 20px;
     width: 90%;
 }
 
+.divImagemBox {
+    width: 40%;
+}
+
 .imagemBox {
-    width: 350px;
-    height: 250px;
+    width: 85%;
     margin: 30px;
     border-radius: 10px;
 }
 
 .content {
+    width: 60%;
     display: flex;
     flex-flow: column;
     align-self: center;
@@ -22,7 +27,7 @@
 
 .tituloManchete {
     margin: 0;
-    width: 600px;
+    width: 90%;
     color: #560027;
 }
 
@@ -35,7 +40,7 @@
 .descricaoNoticia {
     font-size: 20px;
     color: #560027; 
-    width: 600px;  
+    width: 95%;  
     margin: 10px 0;
 }
 
@@ -47,4 +52,67 @@
     color: #ffffff;
     text-decoration: none;
     border-radius: 10px;
+}
+
+@media (max-width: 1250px){
+    .box {
+        display: block;
+        width: 50%;
+    }
+
+    .divImagemBox {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .content {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .tituloManchete, .nomeVeiculo, .descricaoNoticia {
+        margin: 10px auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    .botaoNoticia {
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 1100px) {
+    .box {
+        width: 70%;
+    }
+}
+
+@media (max-width: 850px) {
+    .box {
+        width: 80%;
+    }
+}
+
+@media (max-width: 500px) {
+    .box {
+        width: 90%;
+    }
+
+    .imagemBox {
+        margin: 20px;
+    }
+}
+
+@media (max-width: 380px){
+    .divImagemBox {
+        width: 100%;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .tituloManchete {
+        font-size: 22px;
+    }
 }

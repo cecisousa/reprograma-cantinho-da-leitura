@@ -80,7 +80,7 @@
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 475px) {
     .navbar-menu__botao {
         padding: 6px;
     }

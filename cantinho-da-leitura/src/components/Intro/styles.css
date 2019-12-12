@@ -7,6 +7,11 @@
     margin: auto 20px;
 }
 
+.divImagem {
+    display: flex;
+    align-items: center;
+}
+
 .textoIntro {
     margin: 30px;
     color: #560027;
@@ -23,4 +28,22 @@
     width: 350px;
     margin: 30px;
     border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+    .intro {
+        display: block;
+    }
+
+    .divImagem {
+        margin: 30px auto;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 400px){
+    .imagemIntro {
+        width: 300px;
+    }
 }

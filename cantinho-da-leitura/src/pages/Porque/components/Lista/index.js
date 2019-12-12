@@ -5,9 +5,6 @@ import './styles.css'
 const Lista = () => {
     return (
         <div className="secaoLista">
-            <div>
-                <img className="imagem" src={Estante} alt="Estante de livros ao lado de uma escada de madeira" />
-            </div>
             <div className="lista">
                 <h2 className="titulo">5 motivos para ler mais</h2>
                 <ul>
@@ -18,7 +15,9 @@ const Lista = () => {
                     <li className="item"><span className="detalheLista">Dá para ler até mesmo de graça:</span> além de opções gratuitas na internet, vale descobrir onde fica a biblioteca mais próxima de você.</li>
                 </ul>
             </div>
-
+            <div className="divImagem">
+                <img className="imagem" src={Estante} alt="Estante de livros ao lado de uma escada de madeira" />
+            </div>
         </div>
     )
 }

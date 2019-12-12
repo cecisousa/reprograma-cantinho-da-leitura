@@ -4,7 +4,9 @@ import './styles.css'
 const Box = (props) => {
     return (
         <div className="box">
-            <img className="imagemBox" src={props.src} alt={props.alt}/>
+            <div className="divImagemBox">
+                <img className="imagemBox" src={props.src} alt={props.alt}/>
+            </div>
             <div className="content">
                 <h3 className="tituloManchete">{props.titulo}</h3>
                 <p className="nomeVeiculo">{props.veiculo}</p>
