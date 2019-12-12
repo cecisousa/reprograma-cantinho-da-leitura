@@ -15,3 +15,7 @@
     box-shadow: 0 0 10px #753953;
   }
   
+  .grupo__erro {
+    color: red;
+    font-size: small;
+}

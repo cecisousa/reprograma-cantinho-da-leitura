@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina&display=swap" rel="stylesheet');
-
 .navbar {
     display: flex;
     align-items: center;
@@ -9,46 +8,63 @@
     padding: 0 5%;
     color: #F5A91E;
     background-color: #560027;
-    position: fixed; 
-    top: 0; 
-    width: 100%; 
+    position: fixed;
+    top: 0;
+    width: 100%;
     z-index: 99;
-  }
-  
-  .navbar-logo {
+}
+
+.navbar-logo {
     display: flex;
     align-self: center;
     width: 100px;
     height: 100px;
     padding: 12px;
-  }
-  
-  .navbar-links {
+}
+
+.navbar-links {
     list-style: none;
     display: flex;
     align-items: center;
     padding: 0;
-  }
-  
-  .navbar-links li {
+}
+
+.navbar-links li {
     margin-left: 16px;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.75);
-  }
-  
-  .navbar-links a {
+}
+
+.navbar-links a {
     color: #F5A91E;
     text-transform: uppercase;
     padding-bottom: 6px;
     text-decoration: none;
-  }
+}
 
-  .logo {
+.logo {
     display: flex;
     flex-flow: row;
-  }
+}
 
-  .texto-logo {
+.texto-logo {
     width: 150px;
     margin: 18px;
-  }
-  
+}
+
+@media (max-width: 550px) {
+    .navbar-logo {
+        width: 70px;
+        height: 70px;
+    }
+    .texto-logo {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 400px) {
+    .texto-logo {
+        margin: 12px;
+        font-size: 20px;
+        width: 110px;
+    }
+}

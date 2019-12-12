@@ -26,8 +26,6 @@ class Autores extends React.Component {
             this.setState({
                 autores: response.data.results
             })
-            console.log(response.data.results);
-
         }).catch(err => console.log(err))
     }
 
@@ -44,7 +42,7 @@ class Autores extends React.Component {
                     </div>
                     <div className="divSearch">
                         <Input
-                            placeholder="Pesquise por um autor ou autora"
+                            placeholder="Pesquise o nome de um autor ou autora"
                             tipo="text"
                             getInputValue={this.inputValue}
                         />

@@ -85,3 +85,21 @@ h1 {
   margin-top: 150px;
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.75);
 }
+
+@media (max-width: 660px) {
+
+  h1 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 435px) {
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .home-header {
+    min-height: 94vh;
+  }
+}
