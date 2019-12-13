@@ -36,6 +36,7 @@
     color: #ffffff;
     text-decoration: none;
     border-radius: 10px;
+    text-align: center;
 }
 
 @media (max-width: 600px){
