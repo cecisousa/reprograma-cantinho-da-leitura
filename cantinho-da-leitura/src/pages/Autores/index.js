@@ -11,7 +11,8 @@ class Autores extends React.Component {
         super(props)
         this.state = {
             value: "",
-            autores: []
+            autores: [],
+            pesquisado: false
         }
     }
 
@@ -23,8 +24,18 @@ class Autores extends React.Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
-        this.setState({
-            value: ""
+        this.setState(() => {
+            return {
+                value: ""
+            }
+        }, () => {
+            setTimeout(() => {
+                this.setState(() => {
+                    return {
+                        pesquisado: true
+                    }
+                })
+            }, 1000)
         })
     }
 
@@ -63,9 +74,14 @@ class Autores extends React.Component {
                         </form>
                     </div>
                     <div>
-                        {this.state.autores.map((item, index) => {
-                            return <LivroAutores key={index} {...item} />
-                        })}
+                        {this.state.autores.length > 0
+                            ? this.state.autores.map((item, index) => {
+                                return <LivroAutores key={index} {...item} />
+                            })
+                            : this.state.pesquisado ? <div className="divLoading">
+                                <span className="loading">Nenhum resultado encontrado...</span>
+                            </div> : ""
+                        }
                     </div>
                 </div>
             </Fragment>
