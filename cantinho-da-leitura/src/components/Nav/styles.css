@@ -50,15 +50,13 @@
 .texto-logo {
     width: 150px;
     margin: 18px;
+    font-size: 28px;
 }
 
 @media (max-width: 550px) {
     .navbar-logo {
         width: 70px;
         height: 70px;
-    }
-    .texto-logo {
-        font-size: 28px;
     }
 }
 

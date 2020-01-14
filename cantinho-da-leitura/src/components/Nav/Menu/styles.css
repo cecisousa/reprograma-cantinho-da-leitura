@@ -49,6 +49,7 @@
     .navbar-menu__botao {
         display: none;
     }
+
     .navbar-menu__opcoes {
         display: flex;
         align-items: center;
@@ -60,19 +61,24 @@
         transform: initial;
         transition: initial;
     }
+
     .navbar-menu__opcoes--aberto {
         transform: initial;
     }
+
     .navbar-menu__opcoes li+li {
         margin-top: 0;
         margin-left: 16px;
     }
+
     .navbar-menu__opcoes li a {
         color: #F5A91E;
+        font-size: 18px;
         text-transform: uppercase;
         text-decoration: none;
         padding: 6px 0;
     }
+
     .navbar-menu__opcoes li a:hover {
         color: #FFFFFF;
         -webkit-transition: all 0.3s ease;
@@ -86,6 +92,6 @@
     }
 
     .navbar-links a {
-        font-size: 16px;
+        font-size: 18px;
     }
 }
