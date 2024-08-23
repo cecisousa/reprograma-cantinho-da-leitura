@@ -49,14 +49,21 @@ class Melhores extends React.Component {
           />
           <div>
             {this.state.livros.length > 0 ? (
-              this.state.livros.map((item) => {
-                return item.flatMap((livro) => {
-                  return (
-                    <div key={livro.primary_isbn13}>
-                      <LivroMelhores {...livro} />
+              this.state.livros.map((lista) => {
+                return (
+                  <div key={lista.list_id}>
+                    <span key="nomeLista" className="nomeLista">
+                      <h2>{lista.display_name}</h2>
+                    </span>
+                    <div>
+                      {lista.books.map((livro) => (
+                        <div key={livro.primary_isbn13}>
+                          <LivroMelhores {...livro} />
+                        </div>
+                      ))}
                     </div>
-                  );
-                });
+                  </div>
+                );
               })
             ) : (
               <div className="divLoading">

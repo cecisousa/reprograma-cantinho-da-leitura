@@ -25,6 +25,12 @@
     font-size: 22px;
 }
 
+.nomeLista {
+    font-weight: bold;
+    color: #f09c00;
+    margin:0 auto;
+}
+
 .imagemIntro {
     width: 350px;
     margin: 30px;
