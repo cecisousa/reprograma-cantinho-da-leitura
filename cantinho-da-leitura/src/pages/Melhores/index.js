@@ -18,9 +18,7 @@ class Melhores extends React.Component {
         getMelhores()
             .then(response => {
                 this.setState({
-                    livros: response.data.results.lists.map(item => {
-                        return item.books
-                    })
+                    livros: response.data.results.lists,
                 })
             })
 
