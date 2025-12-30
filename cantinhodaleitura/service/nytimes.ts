@@ -2,14 +2,14 @@ import axios from "axios";
 
 const booksApiConfig = {
 	baseURL: "https://api.nytimes.com/svc/books/v3/",
-	timeout: 1000,
+	timeout: 5000,
 };
 
 const booksApi = axios.create(booksApiConfig);
 
 const searchApiConfig = {
 	baseURL: "https://api.nytimes.com/svc/search/v2/",
-	timeout: 1000,
+	timeout: 5000,
 };
 
 const searchApi = axios.create(searchApiConfig);
