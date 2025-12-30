@@ -1,0 +1,57 @@
+.intro {
+  margin: 50px auto;
+  display: flex;
+}
+
+.divIntro {
+  margin: auto 20px;
+}
+
+.divImagem {
+  display: flex;
+  align-items: center;
+}
+
+.textoIntro {
+  margin: 30px;
+  color: #560027;
+  text-align: center;
+  font-size: 18px;
+}
+
+.nomeSite {
+  font-weight: bold;
+  color: #F5A91E;
+  font-size: 22px;
+}
+
+.nomeLista {
+  font-weight: bold;
+  color: #f09c00;
+  margin: 0 auto;
+}
+
+.imagemIntro {
+  width: 350px;
+  margin: 30px;
+  border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+  .intro {
+    display: block;
+  }
+
+  .divImagem {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .imagemIntro {
+    width: 300px;
+  }
+}
+
