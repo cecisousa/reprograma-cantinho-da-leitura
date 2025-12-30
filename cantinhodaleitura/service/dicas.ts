@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const config = {
   baseURL: 'https://my-json-server.typicode.com/',
-  timeout: 1000,
+  timeout: 5000,
 };
 
 const protocolo = axios.create(config);
