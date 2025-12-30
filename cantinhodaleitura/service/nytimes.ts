@@ -20,7 +20,9 @@ export function getMelhores() {
 	return booksApi.get(url);
 }
 
+const filter = "book";
+
 export function getAutores(nomeAutor: string) {
-	const url = `articlesearch.json?q=${nomeAutor}&api-key=NtEGlE5TW9iOnmlh2YOvE3ySO7DXEXSDYfLSU04w0PgVmf4Q`;
+	const url = `articlesearch.json?q=${nomeAutor}&fq=${filter}&api-key=NtEGlE5TW9iOnmlh2YOvE3ySO7DXEXSDYfLSU04w0PgVmf4Q`;
 	return searchApi.get(url);
 }
