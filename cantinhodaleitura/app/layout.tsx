@@ -5,34 +5,38 @@ import Footer from "@/components/Footer";
 import "./globals.css";
 
 const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+	variable: "--font-geist-sans",
+	subsets: ["latin"],
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+	variable: "--font-geist-mono",
+	subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Cantinho da Leitura",
-  description: "Venha para o mundo da leitura!",
+	title: "Cantinho da Leitura",
+	description: "Venha para o mundo da leitura!",
+	icons: {
+		icon: "/logo.png",
+		apple: "/logo.png",
+	},
 };
 
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
-  return (
-    <html lang="pt-BR">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <Nav />
-        {children}
-        <Footer />
-      </body>
-    </html>
-  );
+	return (
+		<html lang="pt-BR">
+			<body
+				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+			>
+				<Nav />
+				{children}
+				<Footer />
+			</body>
+		</html>
+	);
 }
