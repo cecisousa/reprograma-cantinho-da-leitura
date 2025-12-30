@@ -1,5 +1,3 @@
 {
-  "buildCommand": "cd cantinhodaleitura && npm install && npm run build",
-  "outputDirectory": "cantinhodaleitura/.next",
-  "installCommand": "cd cantinhodaleitura && npm install"
+    "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }
