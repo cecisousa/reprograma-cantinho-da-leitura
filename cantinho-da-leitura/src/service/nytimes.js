@@ -8,11 +8,11 @@ const config = {
 const protocolo = axios.create(config)
 
 export function getMelhores () {
-  const url = 'lists/overview.json?api-key=3sbcchrmAuDWG3vXagfPGU5gV3CGDAwJ'
+  const url = 'lists/overview.json?api-key=NtEGlE5TW9iOnmlh2YOvE3ySO7DXEXSDYfLSU04w0PgVmf4Q'
   return protocolo.get(url)
 }
 
 export function getAutores(nomeAutor) {
-  const url = `reviews.json?author=${nomeAutor}&api-key=3sbcchrmAuDWG3vXagfPGU5gV3CGDAwJ`
+  const url = `reviews.json?author=${nomeAutor}&api-key=NtEGlE5TW9iOnmlh2YOvE3ySO7DXEXSDYfLSU04w0PgVmf4Q`
   return protocolo.get(url)
 }
