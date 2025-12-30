@@ -17,10 +17,6 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
 	title: "Cantinho da Leitura",
 	description: "Venha para o mundo da leitura!",
-	icons: {
-		icon: "/logo.png",
-		apple: "/logo.png",
-	},
 };
 
 export default function RootLayout({
