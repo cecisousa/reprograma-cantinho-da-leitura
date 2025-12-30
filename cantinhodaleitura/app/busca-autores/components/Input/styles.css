@@ -1,0 +1,30 @@
+.campo {
+  font-size: 16px;
+  box-sizing: border-box;
+  display: block;
+  width: 60%;
+  padding: 16px;
+  margin: 16px;
+  border: 2px solid #560027;
+  border-radius: 3px;
+}
+
+.campo:focus {
+  outline: none;
+  border-color: #68193c;
+  box-shadow: 0 0 10px #753953;
+}
+
+@media (max-width: 600px) {
+  .campo {
+    margin: 16px auto;
+    width: 330px;
+  }
+}
+
+@media (max-width: 375px) {
+  .campo {
+    width: 250px;
+  }
+}
+

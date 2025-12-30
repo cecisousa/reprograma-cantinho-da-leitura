@@ -4,8 +4,8 @@ import './styles.css';
 interface IntroProps {
   imagem: string;
   alt: string;
-  paragrafo1: string;
-  paragrafo2: string;
+  paragrafo1: string | React.ReactNode;
+  paragrafo2: string | React.ReactNode;
 }
 
 const Intro: React.FC<IntroProps> = ({ imagem, alt, paragrafo1, paragrafo2 }) => {
